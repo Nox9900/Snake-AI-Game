@@ -8,7 +8,7 @@ from collections import namedtuple
 pygame.init()
 # font = pygame.font.Font('arial.ttf', 25)
 font = pygame.font.SysFont("Arial", 20)
-screen = pygame.display.set_mode((800, 600))
+screen = pygame.display.set_mode((800, 600), pygame.RESIZABLE)
 
 
 class Direction(Enum):
@@ -72,9 +72,12 @@ class SnakeGame:
             if event.type == pygame.QUIT:
                 pygame.quit()
                 quit()
+            # elif event.type == pygame.VIDEORESIZE :
+                # screen = pygame.display.set_mode((event.w, event.h), pygame.RESIZABLE)
 
 
-        # move
+        # screen.fill((30,30,30))
+        # pygame.display.flip()
         self._move(action)
         self.snake.insert(0, self.head)
 
