@@ -113,14 +113,23 @@ Snake AI Game/
     └── model.pth        # best model (created on first record)
 ```
 
-## Notes
+[//]: # (## Notes)
 
-- `Linear_QNet.save()` anchors the path to `Model/model.py` rather than the
-  working directory, so saving works regardless of where you run from.
-- `model.pth` and `__pycache__/` are generated at runtime. They are currently
-  untracked rather than ignored, so they will show up in `git status`; add a
-  `.gitignore` if that is noisy. Delete `model.pth` to start training from a
-  fresh network.
-- Speed is capped at 40 FPS by `Game.SPEED`, so a long training run is
-  wall-clock bound as much as it is compute bound. Raising `SPEED` in
-  `Game/game.py` trains faster at the cost of a harder-to-watch window.
+[//]: # ()
+[//]: # (- `Linear_QNet.save&#40;&#41;` anchors the path to `Model/model.py` rather than the)
+
+[//]: # (  working directory, so saving works regardless of where you run from.)
+
+[//]: # (- `model.pth` and `__pycache__/` are generated at runtime. They are currently)
+
+[//]: # (  untracked rather than ignored, so they will show up in `git status`; add a)
+
+[//]: # (  `.gitignore` if that is noisy. Delete `model.pth` to start training from a)
+
+[//]: # (  fresh network.)
+
+[//]: # (- Speed is capped at 40 FPS by `Game.SPEED`, so a long training run is)
+
+[//]: # (  wall-clock bound as much as it is compute bound. Raising `SPEED` in)
+
+[//]: # (  `Game/game.py` trains faster at the cost of a harder-to-watch window.)
