@@ -11,7 +11,7 @@ def plt(scores, mean_scores):
     plt.xlabel("Number of Games")
     plt.ylabel("Score")
     plt.plt(scores)
-    plt.plt(mean_score)
+    plt.plt(mean_scores)
     plt.ylim(ymin=0)
     plt.text(len(scores) - 1, scores[-1], str(scores[-1]))
     plt.text(len(mean_scores) - 1, mean_scores[-1], str(mean_scores[-1]))
